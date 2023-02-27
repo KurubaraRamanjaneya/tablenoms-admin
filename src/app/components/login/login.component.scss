@@ -1,0 +1,60 @@
+.login-layout {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 200px;
+  height: 100%;
+  background-image: url(../../../assets/backgrounds/1.jpg);
+  .login-area {
+    height: 300px;
+    width: 300px;
+    border-radius: 25px;
+    background-color: rgba(30, 30, 30, 0.793);
+    display: flex;
+    padding: 50px;
+    flex-direction: column; 
+    align-items: center;
+    .logo {
+        margin-bottom: 50px;
+        font-size: x-large;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(223, 223, 223);
+    }
+    label {
+        float: left;
+        align-self: flex-start;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .login-layout {
+        display: flex;
+        justify-content:  center;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+        padding: 0px;
+        .login-area {
+          height: 300px;
+          width: 300px;
+          border-radius: 25px;
+          background-color: rgba(30, 30, 30, 0.793);
+          display: flex;
+          padding: 50px;
+          flex-direction: column; 
+          align-items: center;
+          .logo {
+              margin-bottom: 50px;
+              font-size: x-large;
+              font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              color: rgb(223, 223, 223);
+          }
+          label {
+              float: left;
+              align-self: flex-start;
+          }
+        }
+      }
+  }
