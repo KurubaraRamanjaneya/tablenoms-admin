@@ -1,0 +1,29 @@
+.nav-layout {
+    height: 80%;
+    width: 60px;
+    background-color: rgba(30, 30, 30, 0.793);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 60px;
+    .items {
+        cursor: pointer;
+        padding: 30px;
+        border-radius: 50%;
+        transition: 0.3s;
+        i:active {
+            color: greenyellow;
+        }
+        i {
+            color: azure;
+        }
+    }
+    .items:hover {
+        background-color: rgba(173, 255, 47, 0.3);        
+        i {
+            color: greenyellow;
+        }
+    }
+}
