@@ -26,4 +26,14 @@
             color: greenyellow;
         }
     }
+    .selected-item {
+        cursor: pointer;
+        padding: 30px;
+        border-radius: 50%;
+        transition: 0.3s;
+        background-color: rgba(173, 255, 47, 0.3);        
+        i {
+            color: greenyellow;
+        }
+    }
 }

@@ -1,0 +1,34 @@
+<div class="qr-layout">
+  <app-navbar [heightlight]="'qr'"> </app-navbar>
+  <div class="qr-conatiner">
+    <div class="input-controlls">
+      <label for="numberOfTables">Number of Tables</label>
+      <input
+        type="text"
+        id="numberOfTables"
+        name="numberOfTables"
+        [(ngModel)]="numberOfTables"
+      />
+      <button class="button-go" (click)="generate()">Go</button>
+    </div>
+
+    <div class="qrs-container">
+      <div *ngFor="let tableQr of tableQrs; index as i" class="qr">
+        <qrcode
+          [qrdata]="tableQr"
+          [allowEmptyString]="true"
+          [cssClass]="'center'"
+          [colorDark]="'#000000ff'"
+          [colorLight]="'#ffffffff'"
+          [elementType]="'svg'"
+          [errorCorrectionLevel]="'M'"
+          [margin]="4"
+          [scale]="1"
+          [title]="'A custom title attribute'"
+          [width]="200"
+        ></qrcode>
+        <div>Table : {{i + 1}}</div>
+      </div>
+    </div>
+  </div>
+</div>

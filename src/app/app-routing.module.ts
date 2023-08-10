@@ -5,6 +5,7 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { OrdersComponent } from './components/orders/orders.component';
+import { QrComponent } from './components/qr/qr.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'menu',
     component: MenuComponent,
+  },
+  {
+    path: 'qr',
+    component: QrComponent,
   },
   { path: '', redirectTo: '/login', pathMatch: 'full' },
 ];

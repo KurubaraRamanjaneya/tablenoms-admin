@@ -11,6 +11,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { OrdersComponent } from './components/orders/orders.component';
 import { BillComponent } from './components/bill/bill.component';
 import { MenuComponent } from './components/menu/menu.component';
+import { QrComponent } from './components/qr/qr.component';
+import { QRCodeModule } from 'angularx-qrcode';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,13 +23,16 @@ import { MenuComponent } from './components/menu/menu.component';
     NavbarComponent,
     OrdersComponent,
     BillComponent,
-    MenuComponent
+    MenuComponent,
+    QrComponent
   ],
   imports: [
     MatIconModule,
     BrowserModule,
     AppRoutingModule,
-    MatCardModule
+    MatCardModule,
+    QRCodeModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

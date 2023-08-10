@@ -1,0 +1,40 @@
+.qr-layout {
+  padding: 30px;
+  height: 100%;
+  display: flex;
+  .qr-conatiner {
+    padding: 30px;
+    width: 80%;
+    .input-controlls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      .button-go {
+        background-color: #4cc417;
+        border: none;
+        height: 35px;
+        width: 40px;
+        border-radius: 10px;
+        color: rgba(30, 30, 30, 0.793);
+        transition: 0.2s;
+      }
+
+      .button-go:hover {
+        background-color: #4cc417;
+        border: 2px solid #0f2705;
+      }
+    }
+    .qrs-container {
+        display: flex;
+        flex-wrap: wrap;
+        .qr {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+  }
+
+}
