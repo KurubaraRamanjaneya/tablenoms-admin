@@ -11,7 +11,7 @@ export class QrComponent implements OnInit {
 
   qrData: string = '';
   numberOfTables: number = 0;
-  hotelName: string = "GowdaHotel";
+  hotelName: string = "Gowda Hotel";
   tableQrs: string[] = [];
 
   ngOnInit(): void {
@@ -22,7 +22,7 @@ export class QrComponent implements OnInit {
     this.tableQrs = [];
     for(let i=1; i <= this.numberOfTables; i++)
     {
-      this.tableQrs.push(`http://app.tablenoms.com/${this.hotelName}/${i}`)
+      this.tableQrs.push(`http://app.tablenoms.com/tabs/tab1/${this.hotelName}/${i}`)
     }
   }
 
