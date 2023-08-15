@@ -14,6 +14,8 @@ import { MenuComponent } from './components/menu/menu.component';
 import { QrComponent } from './components/qr/qr.component';
 import { QRCodeModule } from 'angularx-qrcode';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     MatCardModule,
     QRCodeModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    NgxChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

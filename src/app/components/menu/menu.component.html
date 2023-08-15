@@ -1,9 +1,9 @@
 <div class="menu-layout">
   <app-navbar [heightlight]="'menu'"> </app-navbar>
 
-  <!-- <input class="" type="button" value="Add New Dish"/> -->
+  <input class="add-button" type="button" [value]="!addNew ? 'Add New Dish' : 'Back'" (click)="addNew = !addNew"/>
 
-  <!-- <div class="menu-container">
+  <div class="menu-container" *ngIf="addNew">
     <label>Dish name</label>
     <input type="text" />
 
@@ -40,9 +40,9 @@
     </div>
 
     <input type="button" value="Add" />
-  </div> -->
+  </div>
 
-  <div class="menu-container-list">
+  <div class="menu-container-list" *ngIf="!addNew">
     <div class="list">
       <div class="item"></div>
       <div class="item"></div>

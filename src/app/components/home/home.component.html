@@ -1,4 +1,43 @@
 <div class="home-layout">
-    <app-navbar [heightlight]="'home'">
-    </app-navbar>
+  <app-navbar [heightlight]="'home'"> </app-navbar>
+
+  <div class="home-conatiner">
+    <span> Welcome: {{ user }} </span>
+
+    <div class="dashboard">
+      <ngx-charts-bar-vertical
+        [results]="multi"
+        [yAxis]="yAxis"
+        [showXAxisLabel]="showXAxisLabel"
+        [showYAxisLabel]="showYAxisLabel"
+        [xAxisLabel]="xAxisLabel"
+        [yAxisLabel]="yAxisLabel"
+        [gradient]="true"
+        (select)="onSelect($event)"
+      >
+      </ngx-charts-bar-vertical>
+    </div>
+
+    <div class="sub-charts">
+      <div class="detailed-sales">
+        <ngx-charts-pie-grid
+          [scheme]="colorScheme"
+          [results]="multi"
+          (select)="onSelect($event)"
+        >
+        </ngx-charts-pie-grid>
+      </div>
+      <div class="detailed-sales-gauge">
+        <ngx-charts-gauge
+          [scheme]="colorScheme"
+          [results]="multi"
+          [legend]="legend"
+          (select)="onSelect($event)"
+          (activate)="onActivate($event)"
+          (deactivate)="onDeactivate($event)"
+        >
+        </ngx-charts-gauge>
+      </div>
+    </div>
+  </div>
 </div>

@@ -10,6 +10,9 @@
       justify-content: center;
       align-items: center;
       width: 100%;
+      label {
+        width: 170px;
+      }
       .button-go {
         background-color: #4cc417;
         border: none;
