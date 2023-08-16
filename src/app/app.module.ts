@@ -16,6 +16,7 @@ import { QRCodeModule } from 'angularx-qrcode';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { OffersComponent } from './components/offers/offers.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
     OrdersComponent,
     BillComponent,
     MenuComponent,
-    QrComponent
+    QrComponent,
+    OffersComponent
   ],
   imports: [
     MatIconModule,

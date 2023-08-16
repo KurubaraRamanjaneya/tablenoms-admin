@@ -1,6 +1,8 @@
 <div class="menu-layout">
   <app-navbar [heightlight]="'menu'"> </app-navbar>
 
+  <div class="tab-headers">Menu </div>
+
   <input class="add-button" type="button" [value]="!addNew ? 'Add New Dish' : 'Back'" (click)="addNew = !addNew"/>
 
   <div class="menu-container" *ngIf="addNew">

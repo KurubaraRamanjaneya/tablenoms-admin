@@ -1,0 +1,50 @@
+<div class="menu-layout">
+  <app-navbar [heightlight]="'offers'"> </app-navbar>
+
+  <div class="tab-headers">Offers</div>
+  <input
+    class="add-button"
+    type="button"
+    [value]="!addNew ? 'Add Offer' : 'Back'"
+    (click)="addNew = !addNew"
+  />
+
+  <div class="menu-container" *ngIf="addNew">
+    <label>Offer code</label>
+    <input type="text" />
+
+    <label>Discount Price</label>
+    <input type="text" />
+
+    <input type="button" value="Add" />
+  </div>
+
+  <div class="menu-container-list" *ngIf="!addNew">
+    <div class="list">
+      <div class="item">NEW50</div>
+      <div class="item">PAY30</div>
+      <div class="item">BYONEGTONE10</div>
+      <div class="item">NONVEGMANIA</div>
+      <div class="item">GREATFESTIVAL</div>
+      <div class="item">NEW50</div>
+      <div class="item">PAY30</div>
+      <div class="item">BYONEGTONE10</div>
+      <div class="item">NONVEGMANIA</div>
+      <div class="item">GREATFESTIVAL</div>
+      <div class="item">NEW50</div>
+      <div class="item">PAY30</div>
+      <div class="item">BYONEGTONE10</div>
+      <div class="item">NONVEGMANIA</div>
+      <div class="item">NEW50</div>
+      <div class="item">PAY30</div>
+      <div class="item">BYONEGTONE10</div>
+      <div class="item">NONVEGMANIA</div>
+      <div class="item">GREATFESTIVAL</div>
+      <div class="item">NEW50</div>
+      <div class="item">PAY30</div>
+      <div class="item">BYONEGTONE10</div>
+      <div class="item">NONVEGMANIA</div>
+      <div class="item">GREATFESTIVAL</div>
+    </div>
+  </div>
+</div>

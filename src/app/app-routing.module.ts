@@ -6,6 +6,7 @@ import { LoginComponent } from './components/login/login.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { OrdersComponent } from './components/orders/orders.component';
 import { QrComponent } from './components/qr/qr.component';
+import { OffersComponent } from './components/offers/offers.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'qr',
     component: QrComponent,
+  },
+  {
+    path: 'offers',
+    component: OffersComponent,
   },
   { path: '', redirectTo: '/login', pathMatch: 'full' },
 ];

@@ -1,3 +1,15 @@
 <div class="orders-layout">
   <app-navbar [heightlight]="'orders'"> </app-navbar>
+
+  <div class="tab-headers">Orders</div>
+  <div class="orders-container-list">
+    <div class="list">
+      <div class="item" *ngFor="let order of orderList">
+        <span class="table">Table No : {{ order.tableNo }}</span>
+        <ol>
+          <li *ngFor="let item of order.items" class="table">{{ item }}</li>
+        </ol>
+      </div>
+    </div>
+  </div>
 </div>
